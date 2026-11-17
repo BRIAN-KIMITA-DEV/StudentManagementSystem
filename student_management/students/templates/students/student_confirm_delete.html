@@ -1,0 +1,7 @@
+<h1>Confirm Delete Student</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to delete <b>{{ student.first_name }} {{ student.last_name }}</b>?</p>
+   <button type="submit" style="background-color: red; color: white;"> Delete Student</button>
+    
+</form>
